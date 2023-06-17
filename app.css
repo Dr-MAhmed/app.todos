@@ -1,0 +1,53 @@
+.container {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .todo-item .task-container {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  
+  .todo-item .task {
+    display: inline-block;
+  }
+  
+  .todo-item .editable-task {
+    width: 100%;
+  }
+  
+  .todo-item .save-btn {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .todo-item {
+      flex-wrap: wrap;
+    }
+  
+    .todo-item .task-container {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .todo-item .save-btn {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  

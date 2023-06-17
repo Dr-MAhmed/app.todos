@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(188, 184, 184);
+}
+
+.container {
+  background-color: white;
+  width: 500px;
+  max-width: 100%;
+  margin: 20px auto 0;
+  padding: 20px;
+  transition: height 0.3s ease-in-out;
+  overflow-y: auto;
+  border-radius: 7px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background: #11adad;
+  color: white;
+  border: #11adad;
+}
+
+#todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item .task {
+  flex-grow: 1;
+}
+
+.todo-item .delete {
+  position: relative;
+  top: 0;
+  left: 1px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.task-container {
+  width: 85%;
+}
+.editable-task{
+  width: 278px;
+}
+
+
+@media only screen and (max-width: 767px){
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: row; /* Stack form elements vertically */
+  }
+
+  input[type="text"] {
+    flex-basis: 100%; /* Take full width on smaller screens */
+    /* margin-bottom: 10px; Added margin for separation */
+  }
+}
+
+
+
+@media only screen and (max-width: 483px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #todo-list{
+    display: block!important;
+  }
+
+  .editable-task{
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .editable-task{
+    width: 74%;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .editable-task{
+    width: 72%;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .editable-task{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .editable-task{
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .editable-task{
+    width: 64%;
+  }
+}
+
+@media only screen and (max-width: 318px) {
+  .editable-task{
+    width: 57%;
+  }
+}
+
+@media only screen and (max-width: 318px) {
+  .editable-task{
+    width: 55%;
+  }
+}
